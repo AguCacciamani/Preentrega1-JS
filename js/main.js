@@ -1,4 +1,4 @@
-let nombre = prompt("Cual es tu nombre?")
+let nombre = prompt("Cual es tu nombre?");
 let primerNota, segundaNota, tercerNota;
 
 // Función para validar si una nota está entre 1 y 10
@@ -36,18 +36,18 @@ while (true) {
 
 //Calcular promedio
 function promediar(primerNumero, segundoNumero, tercerNumero) {
-    return ((primerNumero + segundoNumero + tercerNumero) / 3);
+    return (primerNumero + segundoNumero + tercerNumero) / 3;
 }
 
 let promedio = promediar(primerNota, segundaNota, tercerNota);
 
 if (promedio >= 8) {
     console.log("Tu nota final es un " + promedio.toFixed(2)); //.toFixed(2) redondea a 2 decimales
-    console.log("Felicitaciones " + nombre + ", aprobaste como alumno sobresaliente");
+    console.log("Felicitaciones " + nombre + ", aprobaste como alumno sobresaliente.");
 } else if (promedio >= 6 && promedio < 8) {
     console.log("Tu nota final es un " + promedio.toFixed(2));
-    console.log("Felicidades " + nombre + ", aprobaste la materia");
+    console.log("Felicidades " + nombre + ", aprobaste la materia.");
 } else {
     console.log("Tu nota final es un " + promedio.toFixed(2));
-    console.log("Lo siento " + nombre + ", desaprobaste la materia");
+    console.log("Lo siento " + nombre + ", desaprobaste la materia.");
 }
